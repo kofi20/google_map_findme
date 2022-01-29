@@ -1,7 +1,3 @@
-# Flutter Google Maps Tutorial
-
-[YouTube Video](https://youtu.be/Zz5hMvgiWmY)
-
 ## Setup
 
 - Get an API Key at [https://cloud.google.com/maps-platform/](https://cloud.google.com/maps-platform/)
@@ -16,7 +12,7 @@
 <manifest ...
   <application ...
     <meta-data android:name="com.google.android.geo.API_KEY"
-               android:value="YOUR KEY HERE"/>
+               android:value="AIzaSyBeOyY9O2d-W3GzzGcEiUJf1dD5GqJRfjs"/>
 ```
 
 `ios/Runner/AppDelegate.swift`
@@ -32,7 +28,7 @@ import GoogleMaps
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
-    GMSServices.provideAPIKey("YOUR KEY HERE")
+    GMSServices.provideAPIKey("AIzaSyBeOyY9O2d-W3GzzGcEiUJf1dD5GqJRfjs")
     GeneratedPluginRegistrant.register(with: self)
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
@@ -42,5 +38,5 @@ import GoogleMaps
 `lib/.env.dart`
 
 ```
-const String googleAPIKey = 'YOUR KEY HERE';
+const String googleAPIKey = 'AIzaSyBeOyY9O2d-W3GzzGcEiUJf1dD5GqJRfjs';
 ```
